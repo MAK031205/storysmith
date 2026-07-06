@@ -42,7 +42,7 @@ Storysmith is built on three core beliefs:
 - 🕵️ **Structural Tension & Contradictions:** Explicitly extracts psychological contradictions that make NPCs feel alive and human.
 - 🌐 **Grounded Research Integration:** Integrates real-world local setting context and cultural research to keep character backgrounds authentic.
 - 🎛️ **Human-in-the-Loop (HITL) Direction:** Pause points where you select the target mood, thematic focus, and mystery handling before the profile is generated.
-- 🎥 **Cinagonist Lens:** Appends a cinematic first-impression block written through the eyes of the game's protagonist (a failed filmmaker).
+- 🎥 **Cinagonist Lens:** Appends a cinematic first-impression block written through the eyes of the game's protagonist (eg. a failed filmmaker).
 
 ---
 
