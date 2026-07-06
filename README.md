@@ -82,7 +82,7 @@ Unlike a single monolithic LLM prompt, Storysmith decomposes character generatio
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/storysmith.git
+   git clone https://github.com/MAK031205/storysmith.git
    cd storysmith
    ```
 
