@@ -104,7 +104,10 @@ Unlike a single monolithic LLM prompt, Storysmith decomposes character generatio
 
 ## Usage
 
-Run the pipeline:
+### 1. Configure Your World
+Before running Storysmith, edit the `project_context.json` file in the root directory. This file acts as the "bible" for your game's world, protagonist, and narrative rules. Fill in the placeholder template fields with your specific project's details so the AI generates characters that fit your exact setting.
+
+### 2. Run the Pipeline
 ```bash
 python main.py
 ```
