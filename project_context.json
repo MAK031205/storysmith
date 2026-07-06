@@ -1,0 +1,33 @@
+{
+  "project_name": "Shifts",
+  "narrative_world": "A beachside vada pav stall in Mumbai run by Ravi — a man who came to the city to make films and stayed to sell food, finding in both the same quiet act of giving people relief from their lives.",
+  "geography": "Mumbai, Maharashtra, India",
+  "time_period": "Present day",
+  "primary_setting": "A beachside vada pav stall in Mumbai",
+  "tone": "Grounded, emotionally realistic, slice-of-life",
+  "genre": "Narrative game",
+  "protagonist": {
+    "name": "Ravi",
+    "gender": "undecided",
+    "role": "vada pav stall owner",
+    "backstory": "Ravi came to Mumbai to make films — to create art that would give people relief from their stress, their anxiety, their worries. When that door closed, he found the same gratification in feeding people at his stall. He stays not because he loves it, but because leaving would mean admitting the dream is dead and going home to prove everyone right. The stall is the last thing that connects him to the person he used to be.",
+    "wants": "A sense of purpose — the feeling that his presence in someone's life, however briefly, means something.",
+    "avoiding": "Going back to his village. Admitting that the people who said he didn't belong here were right.",
+    "why_still_here": "Because nothing else reminds him of the Ravi who used to dream. Without the stall he wouldn't know whether to cry or laugh, breathe or let go."
+  },
+  "research": {
+    "priority": "Mumbai, Maharashtra, Indian forums, personal blogs, interviews, Reddit India, lived experiences from working class Indians",
+    "avoid": "Generic western defaults, non-Indian cultural assumptions unless explicitly relevant to the character"
+  },
+  "character_rules": [
+    "Every NPC must feel like someone who could naturally stop at Ravi's stall",
+    "Characters should reflect the social and economic textures of everyday Mumbai life",
+    "Avoid exotic or dramatic backstories — believability over spectacle",
+    "Dialogue should reflect how people actually speak in Mumbai — code-switching, brevity, indirect emotion"
+  ],
+  "narrative_lens": {
+    "enabled": true,
+    "description": "Ravi watches people the way a filmmaker watches the world — with attention, with longing, and with the specific grief of someone who knows how to see stories but has no way to tell them anymore. Every stranger who stops at his stall is someone whose film he'll never get to make. He doesn't romanticize them through thriller or crime aesthetics. He sees them the way a director sees a face in a crowd — noticing the one detail that would make them unforgettable on screen. Sometimes that detail is ordinary. Sometimes it carries the weight of an entire life.",
+    "instruction": "After generating the objective character, add a short section called PROTAGONIST'S FIRST IMPRESSION. Write 2-3 sentences only. Describe how Ravi briefly perceives this person — not through Bollywood thriller imagery, but through the eye of a failed filmmaker who still can't stop seeing the world as potential cinema. The impression should feel like the first shot of a film he'll never make. It should be specific to this character — what one detail would Ravi notice that a director would frame? Not crime. Not danger. Just the precise, human detail that would make this person worth watching for two hours. The objective character is always the truth. This is only Ravi's fleeting, involuntary cinematic perception before the transaction of selling food takes over."
+  }
+}
