@@ -133,3 +133,12 @@ Planned vision improvements for the next iteration of Storysmith:
 - **Dialogue ideation:** Generating interactive conversation trees and branching response possibilities.
 - **Multiple narrative settings:** Easily switch between different game locations and world contexts.
 
+---
+
+## Connect
+
+Designed and built by **Mohd Ayaan Khan**. Feel free to reach out for collaborations, discussions, or just to talk narrative design!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-ayaan-khan-1127762b0/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mohdayaankhan200@gmail.com)
+
