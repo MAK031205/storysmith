@@ -178,6 +178,9 @@ Rules:
     # --- Pass 3: Research topics, informed by everything above (70B) ---
     print(f"[Extractor] Pass 3: research topics (Llama 3.3 70B)...")
     
+    ctx = state.get("project_context", {})
+    geography = ctx.get("geography", "the specified location")
+    
     contradictions_summary = "; ".join(pass2_data.get("behavioural_contradictions", []))
     questions_summary = "; ".join(pass2_data.get("open_questions", []))
     
@@ -190,8 +193,8 @@ Contradictions: {contradictions_summary if contradictions_summary else "none"}
 Open questions: {questions_summary if questions_summary else "none"}
 
 Suggest 3-5 behaviour-based search topics that would find real human stories illuminating this situation.
-Wrong: "fisherman Mumbai tired" (occupation label)
-Right: "daily exhaustion after physical labour India", "people who maintain pointless rituals psychology"
+Wrong: "fisherman {geography} tired" (occupation label)
+Right: "daily exhaustion after physical labour {geography}", "people who maintain pointless rituals psychology"
 
 Respond ONLY in valid JSON:
 {{

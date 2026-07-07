@@ -173,12 +173,12 @@ Respond ONLY as valid JSON — no explanation, no markdown:
     }
     
     focus_instructions = {
-        "Family": "Make family — present, absent, complicated, or idealized — the gravitational center of this character. Their relationship to family should explain their presence at this stall today.",
+        "Family": f"Make family — present, absent, complicated, or idealized — the gravitational center of this character. Their relationship to family should explain their presence at {ctx['primary_setting']} today.",
         "Profession": "Make their work identity central. Not just what they do, but how their profession has shaped their sense of self, their posture, their language, their fears.",
         "Relationships": "Make specific human connections — or the absence of them — the defining texture of this character. Who do they think about? Who have they lost touch with? Who do they avoid?",
-        "Community": "Make the neighborhood itself almost another character. Show how this person fits into — or sits at the edge of — the social fabric around Ravi's stall. Other vendors, regulars, passersby should feel present. The character should have a social position in this micro-community.",
+        "Community": f"Make the neighborhood itself almost another character. Show how this person fits into — or sits at the edge of — the social fabric around {ctx['primary_setting']}. Other vendors, regulars, passersby should feel present. The character should have a social position in this micro-community.",
         "Personal Identity": "Make the central tension about who this person believes they are versus who they have become. Their presence at the stall should reflect something about how they see themselves.",
-        "Economic Struggle": "Make the financial texture of their life specific and present. Not dramatic poverty — the ordinary, grinding arithmetic of surviving in Mumbai. What does money mean to them day to day?",
+        "Economic Struggle": f"Make the financial texture of their life specific and present. Not dramatic poverty — the ordinary, grinding arithmetic of surviving in {ctx['geography']}. What does money mean to them day to day?",
         "Leave unchanged": "Let the narrative focus emerge naturally from the research and observations."
     }
     
@@ -319,7 +319,7 @@ not the other way around. If you cannot identify a signature, invent one that fe
    The rest should live in behaviour, not biography.
 
 3. **Emotional State Today**
-   Why did this person arrive at the stall today specifically?
+   Why did this person arrive at {ctx['primary_setting']} today specifically?
    What are they carrying emotionally right now?
 
 4. **Personality and Contradictions**

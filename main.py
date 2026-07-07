@@ -23,7 +23,7 @@ class StoryState(TypedDict):
     character: dict
     project_context: dict
 
-def export_character(character: dict, raw_input: str, extracted_data: dict):
+def export_character(character: dict, raw_input: str, extracted_data: dict, project_name: str):
     import re
     import unicodedata
     
@@ -106,7 +106,7 @@ def export_character(character: dict, raw_input: str, extracted_data: dict):
     # --- Build structured output ---
     structured = {
         "meta": {
-            "project": ctx_name if (ctx_name := extracted_data.get("_project", "Shifts")) else "Shifts",
+            "project": project_name,
             "source_input": raw_input,
             "observable_facts": extracted_data.get("observable_facts", []),
             "temporal_patterns": extracted_data.get("temporal_patterns", []),
@@ -209,7 +209,7 @@ if __name__ == "__main__":
     print(f"=== Storysmith Pipeline ===")
     print(f"Project: {project_context['project_name']}\n")
     
-    print("Describe who has stopped at the stall:")
+    print(f"Describe who has arrived at {project_context['primary_setting']}:")
     user_input = input("> ").strip()
     
     if not user_input:
@@ -336,10 +336,10 @@ if __name__ == "__main__":
         print("\n--- Generated Character ---")
         print(result['character']['raw'])
         
-        export_character(result['character'], result['raw_input'], result['extracted_data'])
+        export_character(result['character'], result['raw_input'], result['extracted_data'], result['project_context']['project_name'])
             
     except Exception as e:
         print(f"Pipeline error: {e}")
         raise
 
-    export_character(result['character'], result['raw_input'], result['extracted_data'])
+    export_character(result['character'], result['raw_input'], result['extracted_data'], result['project_context']['project_name'])

@@ -61,7 +61,7 @@ def research(state: dict) -> dict:
     for topic in research_topics[:3]:
         human_queries.append(f"{topic} {geography}")
     if len(human_queries) < 2 and observable_actions:
-        human_queries.append(f"{observable_actions[0]} routine Mumbai India")
+        human_queries.append(f"{observable_actions[0]} routine {geography}")
     
     print(f"\n[Researcher] --- Human Experience Track ---")
     human_results = run_search(human_queries, "Human")
@@ -102,7 +102,7 @@ Focus on:
 Rules:
 - Each query must be specific enough to find real film criticism or literary analysis
 - Do NOT search for matching occupations or character types
-- Do NOT use the word "India" or location names
+- Do NOT use the word "{geography}" or specific location names
 - Each query should be under 8 words
 - Search for techniques and emotional situations, not characters
 
